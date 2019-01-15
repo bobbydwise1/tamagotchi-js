@@ -10,7 +10,10 @@ export class Tamagotchi {
   setHunger() {
     setInterval(() => {
       this.foodLevel--;
+      this.sleepLevel--;
+      this.playLevel--;
     }, 1000);
+    console.log("sleep level:", pet.sleepLevel);
   }
 
   didYouGetEaten() {
