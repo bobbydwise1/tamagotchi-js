@@ -43,11 +43,6 @@ describe('Tamagotchi', function() {
     expect(pet.isBored).toEqual(1);
   });
 
-  // it('should get very hungry if 10 seconds pass without feeding', function() {
-  //   jasmine.clock().tick(10001);
-  //   expect(pet.didPetGetCranky()).toEqual(true);
-  // });
-  //
   it('should have a food level of ten if it is fed', function() {
     jasmine.clock().tick(3001);
     pet.feed();
