@@ -1,3 +1,56 @@
 body {
   background-color: lightyellow;
 }
+
+.top {
+  margin: auto;
+  text-align: center;
+}
+
+.box {
+  background-color: lightblue;
+  border-radius: 179px 179px 179px 179px;
+  border: 23px solid #000000;
+  width: 550px;
+  height: 600px;
+  padding: 50px;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border-radius: 179px 179px 179px 179px;
+  border: none;
+  color: white;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pet-image {
+  background-color: white;
+  border: 10px solid #000000;
+  width: 350px;
+  height: 350px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  /* padding: 50px; */
+}
+
+.status {
+  text-align: justify;
+  background-color: grey;
+  margin: auto;
+  width: 330px;
+  height: 30px;
+}
+
+.status p {
+  margin: auto;
+  font-weight: bold;
+}

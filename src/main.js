@@ -1,10 +1,16 @@
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './styles.css';
 import $ from 'jquery';
 import { Tamagotchi } from './tamagotchi.js';
+import petEating from '../src/images/Dog.gif';
+
 let pet = new Tamagotchi("Chip");
 
 $(document).ready(function() {
+  var petImage = document.getElementById('catEating');
+  petImage.src = petEating;
+
   $("#time_output").text(0);
   pet.setHunger();
   pet.setPlay();

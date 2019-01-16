@@ -6,7 +6,9 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 
 module.exports = {
-  entry: './src/main.js',
+  entry: {
+    main: './src/main.js',
+  },
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist')
@@ -19,9 +21,9 @@ module.exports = {
     new UglifyJsPlugin({ sourceMap: true }),
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
-      title: 'Ping Pong',
+      title: 'Index',
       template: './src/index.html',
-      inject: 'body'
+      inject: 'body',
     })
   ],
   module: {
@@ -32,6 +34,16 @@ module.exports = {
         'style-loader',
         'css-loader'
       ]
+    },
+    {
+      test: /\.(gif|png|jp(e*)g|svg)$/,
+      use: [{
+          loader: 'url-loader',
+          options: {
+              limit: 8000, // Convert images < 8kb to base64 strings
+              name: 'images/[hash]-[name].[ext]'
+          }
+      }]
     },
     {
       test: /\.js$/,

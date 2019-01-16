@@ -5,17 +5,35 @@
     <title>Tamagotchi</title>
   </head>
   <body>
-    <h1>Tamagotchi!</h1>
-    <button id="input_feed" class="button" type="button" name="input_feed">Feed</button>
-    <button id="input_sleep" class="button" type="button" name="input_sleep">Sleep Time</button>
-    <button id="input_play" class="button" type="button" name="input_play">Play With</button>
-    <h1>Time: <span id="time_output"></span><h1>
-    <h1>food level: <span id="food_output"></span><h1>
-    <h1>sleep level: <span id="sleep_output"></span><h1>
-    <h1>fun level: <span id="fun_output"></span><h1>
-    <h1>is dead?: <span id="dead_output"></span><h1>
-    <h1>is cranky?: <span id="cranky_output"></span><h1>
-    <h1>is bored?: <span id="bored_output"></span><h1>
+    <div class="container">
+      <div class="top">
+        <h1>Tamagotchi</h1>
+        <!-- <p>Time: <span id="time_output"></span><p>
+        <p>food level: <span id="food_output"></span><p>
+        <p>sleep level: <span id="sleep_output"></span><p> -->
+        <!-- <p>fun level: <span id="fun_output"></span><p> -->
+        <p>is dead?: <span id="dead_output"></span><p>
+        <p>is cranky?: <span id="cranky_output"></span><p>
+        <p>is bored?: <span id="bored_output"></span><p>
 
+      </div>
+      <div class="container box">
+        <div class="pet-image">
+          <!-- <img src="./images/cat-eating.jpeg" alt="pic of cat"> -->
+          <img id="catEating" height='300px' width='330px' alt="other pic" />
+          <div class="row status">
+            <p>Food: <span id="food_output"></span><p>
+            <p>Sleep: <span id="sleep_output"></span><p>
+            <p>Fun: <span id="fun_output"></span><p>
+          </div>
+          <div class="row">
+            <button id="input_feed" class="button" type="button" name="input_feed">Feed</button>
+            <button id="input_sleep" class="button" type="button" name="input_sleep">Sleep</button>
+            <button id="input_play" class="button" type="button" name="input_play">Play</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </body>
 </html>
